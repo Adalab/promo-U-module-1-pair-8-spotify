@@ -1,0 +1,95 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+:root {
+    --font-family: "Roboto";
+
+}
+
+html {
+    font-size: 62.5%;
+    font-family: var(--font-family);
+}
+
+header {
+    padding: 1rem;
+    background-color: black;
+  
+}
+.nav {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.imgNav {
+    width: 4rem;
+    height: 4rem;
+}
+.imgLogo  {
+    width: 12rem;
+    height: 4rem;
+   }
+
+.sec1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    font-family: var(--font-family);
+    background-color: skyblue;
+    height: 50vh;
+    padding: 1rem;
+    background-image: url(../pics/premium_dancer.png);
+    font-weight: bold;
+}
+
+.sec2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.sec2 h1 {
+    font-size: 3rem;
+}
+.beneficios {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+
+}
+.article{
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+    margin: 1rem;
+}
+.image {
+    height: 5rem;
+    width: 5rem;
+}
+.sec1 h1{
+    font-size: 5rem;
+    text-align: left;
+}
+.sec1 h2{
+    font-size: 3rem;
+    text-align: left;
+}
+
+.sec1 .button {
+    display: inline-block;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    width: 25rem;
+    height: 3rem;
+    padding-top: 0.7rem;
+    text-transform: uppercase;
+}
+
+footer {background-color: black;}
