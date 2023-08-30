@@ -1,16 +1,6 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  :root {
-    --font-family: "Roboto";
-  }
-  
-  html {
-    font-size: 62.5%;
-    font-family: var(--font-family);
-  }
+@import "./layout/page";
+@import "./core/reset";
+@import "./layout/footer";
   
   .header {
     padding: 1rem;
@@ -49,32 +39,6 @@
     font-weight: bold;
   }
   
-  .sec2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    
-  }
-  .sec2 h1 {
-    font-size: 3rem;
-    text-align: center;
-  }
-  .beneficios {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-  }
-  .article {
-    display: flex;
-    align-items: center;
-    column-gap: 2rem;
-    margin: 1rem;
-  }
-  .image {
-    height: 5rem;
-    width: 5rem;
-  }
   .sec1 h1 {
     font-size: 4rem;
     text-align: left;
@@ -96,74 +60,4 @@
     height: 3rem;
     padding: 0.4rem;
     text-transform: uppercase;
-  }
-  .footer {
-    display: flex;
-    height: 100px;
-    color: white;
-    background-color: black;
-    list-style: none;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .fdiv {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .spain {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  .legal, .contact, .copy {
-    display: flex;
-  }
-  
-  .info {
-    display: flex;
-    padding-top: 5px;
-  }
-  
-  .fdiv div {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 1rem;
-  }
-  
-  .fnav li {
-    margin: 5px;
-  }
-  
-  .fnav {
-    margin: 15px 10px 15px 10px;
-    list-style: none;
-  }
-  
-  .spain img {
-    transform: scale(-0.5);
-  
-  }
-  
-  @media (min-width: 480px){
-    /* 
-    Menu de hamburguesa desparece: Listado: Premium, ayuda, Descargar, |, Registrarse Iniciar sesión
-    Fondo cambia y sale la chica
-    Ver planes izquierda
-    Dos columnas
-    Legal, Contactos, Info en linea
-    */
-    .main {
-      height: 100vh;
-  
-    }
-    .sec1 {
-      height: 50%; 
-      background-image: url(./assets/images/pics/premium_dancer.png); 
-  
-  }
-  }
-  
-  @media (min-width: 1000px){
-  
   }

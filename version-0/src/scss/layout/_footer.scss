@@ -1,8 +1,53 @@
-.page__footer {
+.footer {
+
   position: fixed;
-  left: 0;
+  right: 0;
   bottom: 0;
   width: 100vw;
-  padding: 1rem;
-  color: $color-secondary;
-}
+  height: 100px;
+    color: white;
+    background-color: black;
+    list-style: none;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .fdiv {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .spain {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .legal, .contact, .copy {
+    display: flex;
+  }
+  
+  .info {
+    display: flex;
+    padding-top: 5px;
+  }
+  
+  .fdiv div {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+  }
+  
+  .fnav li {
+    margin: 5px;
+  }
+  
+  .fnav {
+    margin: 15px 10px 15px 10px;
+    list-style: none;
+  }
+  
+  .spain img {
+    transform: scale(-0.5);
+  
+  }
+  
