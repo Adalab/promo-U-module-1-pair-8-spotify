@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
-    <!-- <link rel="stylesheet" href="./assets/css/main.css"> -->
+    <link rel="stylesheet" href="./assets/css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap" rel="stylesheet">
 </head>
 
@@ -14,70 +14,89 @@
 
     <h1>Regístrate gratis para escuchar.</h1>
     
-    Botón- Icono- Registrarte con Facebook
-    <label for=""></label>
-    <input type="" id="" name=""/>
-    Botón- Icono- Registrarte con Google
-    <label for=""></label>
-    <input type="" id="" name=""/>
+    <a class="facebook" href="#">Registrarte con Facebook</a>
+    <a class="google" href="#">Registrarte con Google</a>  
+    
 
-    o
+    <form action="/signup" method="post">
     <fieldset>
         <legend>Registrarte con tu correo electrónico</legend>
-        <label for="">¿Cuál es tu correo electrónico?</label>
-        <input type="" id="" name="" placeholder="Pon tu correo electrónico." />
-        <label for="">Confirma el correo electrónico</label>
-        <input type="" id="" name="" placeholder="Vuelve a poner tu correo electrónico." />
-        <label for="">Crea una contraseña</label>
-        <input type="" id="" name="" placeholder="Crea una contraseña." />
-        <label for="">¿Cómo quieres que te llamemos?</label>
-        <input type="" id="" name="" placeholder="Pon tu nombre de perfil." />
+        <label for="email">¿Cuál es tu correo electrónico?</label>
+        <input type="email" id="email" name="email" placeholder="Pon tu correo electrónico." />
+        <label for="email">Confirma el correo electrónico</label>
+        <input type="email" id="email" name="email" placeholder="Vuelve a poner tu correo electrónico." />
+        <label for="password">Crea una contraseña</label>
+        <input type="password" id="password" name="password" placeholder="Crea una contraseña." />
+        <label for="name">¿Cómo quieres que te llamemos?</label>
+        <input type="text" id="name" name="name" placeholder="Pon tu nombre de perfil." />
         <span> Esto aparece en tu perfil.</span>
-    </fieldset>
+  
+<fieldset>
+  <legend>¿Cuál es tu fecha de nacimiento?</legend>
+    <label for="day">Día</label>
+    <input type="number" id="day" name="day" min="1" max="31" maxlength="2" placeholder="DD"/>
 
-    <label for="">¿Cuál es tu fecha de nacimiento?</label>
-    <input type="" id="" name=""/>
-    
+    <label for="month">Mes</label>
+    <select name="month">
+      <option value="">Mes</option>
+      <option value="1">Enero</option>
+      <option value="2">Febrero</option>
+      <option value="3">Marzo</option>
+      <option value="4">Abril</option>
+      <option value="5">Mayo</option>
+      <option value="6">Junio</option>
+      <option value="7">Julio</option>
+      <option value="8">Agosto</option>
+      <option value="9">Septiembre</option>
+      <option value="10">Octubre</option>
+      <option value="11">Noviembre</option>
+      <option value="12">Diciembre</option>
+    </select>
+
+    <label for="year">Año</label>
+    <input type="number" id="year" name="year" min="1900" max="2023" maxlength="4" placeholder="AAAA"/>
+  </fieldset>
     Día Mes Año
     DD mes select AAA
 
-    <label for="">¿Cuál es tu género?</label>
-    <input type="" id="" name=""/>
-        radius Hombre radius Mujer radius No binario
-        <!-- <div>
-          <label for="paymentmethod1">
-           <input
-             id="paymentmethod1"
-             type="radio"
-             value="debitcard"
-             name="paymentmethods"
-           />
-            Tarjeta de débito
-          </label>
-         </div> -->
+    <fieldset>
+      <legend>¿Cuál es tu género?</legend>
+      <label for="male">Hombre</label>
+      <input type="radio" id="male" name="gender" value="m"/>
+      <label for="female">Mujer</label>
+      <input type="radio" id="female" name="gender" value="f"/>
+      <label for="nonb">No binario</label>
+      <input type="radio" id="nonb" name="gender" value="n"/>
+    </fieldset>
 
-
-    <label for=""></label>
-    <input type="" id="" name=""/>
-    check-box. Quiero que me enviéis novedades y ofertas de Spotify.
-    check-box. Compartir mis datos de registro con los proveedores de contenidos de Spotify para fines de
-    marketing. Ten en cuenta que tus datos pueden ser transferidos a un país de fuera del EEE, tal y como se recoge en nuestra Política de Privacidad.
-    <!-- <div>
-        <label for="flightoption1">
+    
+        <label for="publicity">
           <input
-            id="flightoption1"
+            id="publicity"
             type="checkbox"
-            value="chooseseat"
-            name="flightoptions"
+            value="x"
+            name="publicity"
           />
-          Selección de asiento
+          Quiero que me enviéis novedades y ofertas de Spotify.
         </label>
-      </div> -->
+        <label for="data">
+          <input
+            id="data"
+            type="checkbox"
+            value="y"
+            name="data"
+          />
+          Compartir mis datos de registro con los proveedores de contenidos de Spotify para fines de
+           marketing. Ten en cuenta que tus datos pueden ser transferidos a un país de fuera del EEE, tal y como se recoge en nuestra Política de Privacidad.
+        </label>
+      
 
-    <label for="">Registrarte</label>
-    <input type="" id="" name=""/>
+    <label for="signup"></label>
+    <input type="submit" id="signup" name="signup" value="Registrarte"/>
     
     <span>¿Ya tienes cuenta?<a href="#">Inicia sesión</a>.</span>
+  </fieldset>
+  </form>
 
 </body>
 
